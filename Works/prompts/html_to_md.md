@@ -1,0 +1,3 @@
+/html-to-markdown
+
+The file `/home/haidang/Works/ownersbook+/Works/Tasks/HASHST_DEV-4556/contexts/HASHST_DEV-4556.html` in the `HASHST_DEV-4556` directory contains the HTML content describing the requirements for ticket `HASHST_DEV-4556`. Please convert this HTML content to Markdown and save the result to the file `/home/haidang/Works/ownersbook+/Works/Tasks/HASHST_DEV-4556/contexts/HASHST_DEV-4556.md`.

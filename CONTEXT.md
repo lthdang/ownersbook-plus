@@ -34,9 +34,24 @@ _Avoid_: allowed character, standard kanji
 A kanji outside the CJK Unified Ideographs block U+4E00–U+9FFF, such as 﨑 (compatibility), 㐂 (Ext-A) or 𠮷 (Ext-B, a surrogate pair). These are common in real names.
 _Avoid_: 外字, invalid kanji
 
+### Fund offering status
+
+**当初募集** (primary offering):
+The period in which a fund's units are first sold to investors, before any secondary trading.
+_Avoid_: initial sale, first offering
+
+**募集終了** (sold out):
+The investor-facing status of a fund in **当初募集** whose remaining units have all been taken. It says nothing about whether the offering period has ended.
+_Avoid_: 当初募集終了, offering closed
+
+**当初募集終了日時** (primary offering end date):
+The configured date and time at which the **当初募集** period ends.
+_Avoid_: 募集終了, sold-out date
+
 ## Relationships
 
 - A **Masked email** keeps the first 2 and the last 1 character of the **Local part**.
 - An **Unmasked short address** is the one case where a **Masked email** equals the original address.
 - A customer name passes through three stages in order: **Input character check** → **SJIS-win check** → conversion to **保振制度内字** at 審査. Each stage is stricter than the one before.
 - An **Out-of-range kanji** must pass the **Input character check**. Whether it survives the **SJIS-win check** depends on the character (﨑 passes, 𠮷 and 㐂 do not).
+- A fund can show **募集終了** while still before its **当初募集終了日時**, because selling out and the period ending are independent events.
